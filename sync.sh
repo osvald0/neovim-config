@@ -20,6 +20,7 @@ install_config() {
     --exclude '.git' \
     --exclude '.gitignore' \
     --exclude 'README.md' \
+    --exclude 'LICENSE' \
     --exclude 'sync.sh' \
     "$REPO_PATH/" "$NVIM_CONFIG_PATH/"
 
@@ -33,12 +34,13 @@ update_repo() {
     --exclude '.git' \
     --exclude '.gitignore' \
     --exclude 'README.md' \
+    --exclude 'LICENSE' \
     --exclude 'sync.sh' \
     "$NVIM_CONFIG_PATH/" "$REPO_PATH/"
 
-  cd "$REPO_PATH"
-  git add .
-  git commit -m "Update config from ~/.config/nvim"
+  # cd "$REPO_PATH"
+  # git add .
+  # git commit -m "Update config from ~/.config/nvim"
 
   echo "Repo updated at $REPO_PATH"
 }
