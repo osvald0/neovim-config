@@ -57,11 +57,11 @@ opts.desc = "Toggle line wrap"
 keymap.set("n", "<leader>lw", "<cmd>set wrap!<CR>", opts)
 
 -- Diagnostics & LSP
-opts.desc = "Show buffer diagnostics"
-keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts)
-
-opts.desc = "Show line diagnostics"
-keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
+-- opts.desc = "Show buffer diagnostics"
+-- keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts)
+--
+-- opts.desc = "Show line diagnostics"
+-- keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
 
 opts.desc = "Show hover documentation"
 keymap.set("n", "K", vim.lsp.buf.hover, opts)
