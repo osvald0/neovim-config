@@ -10,6 +10,18 @@ opt.number = true
 -- Relative line numbers for navigation
 opt.relativenumber = true
 
+-- 2 spaces for tabs (prettier default)
+opt.tabstop = 2
+
+-- 2 spaces for indent width
+opt.shiftwidth = 2
+
+-- expand tab to spaces
+opt.expandtab = true
+
+-- copy indent from current line when starting new one
+opt.autoindent = true
+
 -- Enable mouse mode
 opt.mouse = "a"
 
