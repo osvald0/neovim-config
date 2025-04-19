@@ -1,4 +1,6 @@
 return {
+	-- If you want neo-tree's file operations to work with LSP (updating imports, etc.), you can use a plugin like
+	-- https://github.com/antosha417/nvim-lsp-file-operations:
 	-- {
 	--   "antosha417/nvim-lsp-file-operations",
 	--   dependencies = {
@@ -103,6 +105,7 @@ return {
 						folder_empty = "󰜌",
 						provider = function(icon, node, state) -- default icon provider utilizes nvim-web-devicons if available
 							if node.type == "file" or node.type == "terminal" then
+								---@diagnostic disable-next-line: undefined-global
 								local success, web_devicons = pcall(require, "nvim-web-devicons")
 								local name = node.type == "terminal" and "terminal" or node.name
 								if success then
